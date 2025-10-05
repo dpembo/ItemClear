@@ -1,0 +1,18 @@
+# Clear interval in sekunden
+clear-interval: 600
+# Warnungs timer bevor der clear passiert
+warning-time: 60
+# Nachricht die angezeigt wird wenn die Items gecleart wurden
+clear-message: '&6[ItemClear] &cAlle Items wurden vom Boden entfernt!'
+# Warung die Angezeigt wird wenn die Items gecleart werden
+warning-message: '&6[ItemClear] &eAchtung! In einer Minute werden alle Items vom Boden entfernt!'
+
+# Command Nachrichten
+# Nachricht die dem Spieler angezeigt wird wenn der Command erfolgreich ausgeführt wurde
+command-success-message: '&6[ItemClear] &aItem Clear wurde sofort ausgeführt!'
+# Broadcast Nachricht die allen Spielern angezeigt wird wenn ein Admin den Command ausführt
+command-broadcast-message: '&6[ItemClear] &eEin Admin hat den Item Clear manuell ausgelöst!'
+# Nachricht die angezeigt wird wenn der Spieler keine Berechtigung hat
+command-no-permission-message: '&6[ItemClear] &cDu hast keine Berechtigung für diesen Command!'
+# Nachricht die angezeigt wird wenn der Command nicht von einem Spieler ausgeführt wird
+command-player-only-message: '&6[ItemClear] &cDieser Command kann nur von Spielern ausgeführt werden!'
