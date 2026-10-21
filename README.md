@@ -1,6 +1,6 @@
 # 🧹 ItemClear
 
-Ein leistungsstarkes Minecraft Spigot/Paper Plugin, das automatisch Items vom Boden entfernt, um die Server-Performance zu optimieren.
+A powerful Minecraft Spigot/Paper plugin that automatically removes items from the ground to optimize server performance.
 
 [![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21-brightgreen.svg)](https://www.spigotmc.org/)
 [![Java Version](https://img.shields.io/badge/Java-21-orange.svg)](https://www.oracle.com/java/)
@@ -8,90 +8,92 @@ Ein leistungsstarkes Minecraft Spigot/Paper Plugin, das automatisch Items vom Bo
 
 ## 📋 Features
 
-- ⏰ **Automatisches Item-Clearing** - Entfernt Items in konfigurierbaren Zeitintervallen
-- ⚠️ **Vorwarnsystem** - Warnt Spieler vor dem Item-Clear
-- 🎨 **Vollständig anpassbar** - Alle Nachrichten und Zeiten konfigurierbar
-- 🔧 **Admin-Command** - Manuelles Item-Clearing per Befehl
-- 🌍 **Multi-World Support** - Funktioniert in allen Welten gleichzeitig
-- 🎯 **Performance-optimiert** - Minimale Server-Belastung
-- 🔐 **Permission-System** - Sichere Rechteverwaltung
+- ⏰ **Automatic Item Clearing** – Removes items at configurable time intervals  
+- ⚠️ **Warning System** – Warns players before the item clear  
+- 🎨 **Fully Customizable** – All messages and timings are configurable  
+- 🔧 **Admin Command** – Manual item clearing via command  
+- 🌍 **Multi-World Support** – Works across all worlds simultaneously  
+- 🎯 **Performance Optimized** – Minimal server load  
+- 🔐 **Permission System** – Secure permission management  
 
 ## 🚀 Installation
 
-1. Lade die neueste Version von ItemClear herunter
-2. Platziere die `.jar` Datei in deinem `plugins` Ordner
-3. Starte den Server neu oder lade das Plugin mit einem Plugin-Manager
-4. Konfiguriere das Plugin nach deinen Wünschen in der `config.yml`
+1. Download the latest version of ItemClear  
+2. Place the `.jar` file in your `plugins` folder  
+3. Restart the server or load the plugin using a plugin manager  
+4. Configure the plugin to your liking in `config.yml`  
 
-## ⚙️ Konfiguration
+## ⚙️ Configuration
 
-Die `config.yml` wird automatisch beim ersten Start erstellt:
+The `config.yml` is automatically created on first startup:
+
+
 
 ```yaml
-# Clear interval in sekunden
+# Clear interval in seconds
 clear-interval: 600
 
-# Warnungs timer bevor der clear passiert
+# Warning timer before the clear happens
 warning-time: 60
 
-# Nachricht die angezeigt wird wenn die Items gecleart wurden
-clear-message: '&6[ItemClear] &cAlle Items wurden vom Boden entfernt!'
+# Message displayed when items are cleared
+clear-message: '&6[ItemClear] &cAll items have been removed from the ground!'
 
-# Warung die Angezeigt wird wenn die Items gecleart werden
-warning-message: '&6[ItemClear] &eAchtung! In einer Minute werden alle Items vom Boden entfernt!'
+# Warning displayed before items are cleared
+warning-message: '&6[ItemClear] &eAttention! All items will be removed from the ground in one minute!'
 
-# Command Nachrichten
-command-success-message: '&6[ItemClear] &aItem Clear wurde sofort ausgeführt!'
-command-broadcast-message: '&6[ItemClear] &eEin Admin hat den Item Clear manuell ausgelöst!'
-command-no-permission-message: '&6[ItemClear] &cDu hast keine Berechtigung für diesen Command!'
-command-player-only-message: '&6[ItemClear] &cDieser Command kann nur von Spielern ausgeführt werden!'
+# Command messages
+command-success-message: '&6[ItemClear] &aItem clear executed immediately!'
+command-broadcast-message: '&6[ItemClear] &eAn admin manually triggered an item clear!'
+command-no-permission-message: '&6[ItemClear] &cYou do not have permission for this command!'
+command-player-only-message: '&6[ItemClear] &cThis command can only be executed by players!'
 ```
 
-### 🎨 Farbcodes
+### 🎨 Color Codes
 
-Das Plugin unterstützt Minecraft-Farbcodes mit dem `&` Symbol:
+The plugin supports Minecraft color codes using the `&` symbol:
 
-| Code | Farbe | Code | Farbe |
-|------|-------|------|-------|
-| `&0` | Schwarz | `&8` | Dunkelgrau |
-| `&1` | Dunkelblau | `&9` | Blau |
-| `&2` | Dunkelgrün | `&a` | Grün |
-| `&3` | Dunkel Aqua | `&b` | Aqua |
-| `&4` | Dunkelrot | `&c` | Rot |
-| `&5` | Dunkel Lila | `&d` | Rosa |
-| `&6` | Gold | `&e` | Gelb |
-| `&7` | Grau | `&f` | Weiß |
+| Code | Color | Code | Color |
+|------|--------|------|--------|
+| `&0` | Black | `&8` | Dark Gray |
+| `&1` | Dark Blue | `&9` | Blue |
+| `&2` | Dark Green | `&a` | Green |
+| `&3` | Dark Aqua | `&b` | Aqua |
+| `&4` | Dark Red | `&c` | Red |
+| `&5` | Dark Purple | `&d` | Pink |
+| `&6` | Gold | `&e` | Yellow |
+| `&7` | Gray | `&f` | White |
 
 ## 🎮 Commands
 
-| Command | Beschreibung | Permission | Aliases |
-|---------|--------------|------------|---------|
-| `/ic` | Führt Item Clear sofort aus | `itemclear.admin` oder OP | - |
+| Command | Description | Permission | Aliases |
+|---------|-------------|------------|---------|
+| `/ic` | Executes Item Clear immediately | `itemclear.admin` or OP | - |
 
 ## 🔐 Permissions
 
-| Permission | Beschreibung | Standard |
-|------------|--------------|----------|
-| `itemclear.admin` | Erlaubt die Nutzung des `/ic` Commands | OP |
+| Permission | Description | Default |
+|------------|-------------|----------|
+| `itemclear.admin` | Allows the use of the `/ic` command | OP |
 
-## 🛠️ Entwicklung
+## 🛠️ Development
 
-### Voraussetzungen
+### Requirements
 
-- Java 21 oder höher
+- Java 21 or higher
 - Maven 3.6+
 - Paper API 1.21
 
 ### Build
 
+
 ```bash
 mvn clean package
 ```
 
-Die fertige `.jar` Datei findest du im `target` Ordner.
+The finished `.jar` file can be found in the `target` folder.
 
-### Projektstruktur
-
+### Project Structure
 ```
 ItemClear/
 ├── src/
@@ -108,35 +110,35 @@ ItemClear/
 └── README.md
 ```
 
-## 📊 Funktionsweise
+## 📊 How It Works
 
-1. **Automatischer Modus**: Das Plugin startet einen Timer basierend auf dem `clear-interval`
-2. **Warnung**: `warning-time` Sekunden vor dem Clear wird eine Warnung gesendet
-3. **Clearing**: Alle Items werden aus allen Welten entfernt
-4. **Wiederholung**: Der Prozess wiederholt sich automatisch
+1. **Automatic Mode**: The plugin starts a timer based on the `clear-interval`  
+2. **Warning**: A warning is sent `warning-time` seconds before the clear  
+3. **Clearing**: All items are removed from all worlds  
+4. **Repeat**: The process repeats automatically  
 
 ## 🤝 Support
 
-Bei Fragen oder Problemen:
-- Erstelle ein Issue auf GitHub
-- Kontaktiere den Entwickler: **zKinqJustinTW**
+If you have questions or issues:  
+- Create an issue on GitHub  
+- Contact the developer: **zKinqJustinTW**
 
 ## 📝 Changelog
 
 ### Version 1.0
-- ✨ Initiales Release
-- ⏰ Automatisches Item-Clearing
-- ⚠️ Vorwarnsystem
-- 🔧 Admin-Command
-- 🎨 Vollständig konfigurierbar
+- ✨ Initial release  
+- ⏰ Automatic item clearing  
+- ⚠️ Warning system  
+- 🔧 Admin command  
+- 🎨 Fully configurable  
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **zKinqJustinTW**
 
-## 📄 Lizenz
+## 📄 License
 
-Dieses Projekt steht unter der MIT Lizenz.
+This project is licensed under the MIT License.
 
 ---
 
