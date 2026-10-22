@@ -127,7 +127,8 @@ If you have questions or issues:
 
 ### Version 2.0 (dpembo)
 - ✨ **Fork Release**: Introduces the dpembo-maintained branch of ItemClear with updated compatibility and safety improvements
-- 🌐 **Fully Translated to English**: All messages, configuration entries, and documentation are now English‑native for international servers
+- 🌐 **Fully Translated to English**:
+  All messages, configuration entries, and documentation are now English‑native for international servers, with in game meessages supporting plaeholders for correct display of counts and timers
 - 🖼️ **Item Frame Protection**: Hard‑blocked item removal from item frames to ensure decorative builds and displays remain untouched under all conditions
 - 🧹 **Smart Floor‑Only Clearing**: Added a world scan check so the clear task only runs when actual dropped items exist, preventing unnecessary cycles
 - ☕ **Updated to Java 25**: Migrated the project to Java 25, matching Paper 26.2+ requirements and ensuring future compatibility
