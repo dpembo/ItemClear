@@ -125,17 +125,26 @@ If you have questions or issues:
 
 ## 📝 Changelog
 
-### Version 1.0
+### Version 2.0 (dpembo)
+- ✨ **Fork Release**: Introduces the dpembo-maintained branch of ItemClear with updated compatibility and safety improvements
+- 🌐 **Fully Translated to English**: All messages, configuration entries, and documentation are now English‑native for international servers
+- 🖼️ **Item Frame Protection**: Hard‑blocked item removal from item frames to ensure decorative builds and displays remain untouched under all conditions
+- 🧹 **Smart Floor‑Only Clearing**: Added a world scan check so the clear task only runs when actual dropped items exist, preventing unnecessary cycles
+- ☕ **Updated to Java 25**: Migrated the project to Java 25, matching Paper 26.2+ requirements and ensuring future compatibility
+- 📄 **Added License File**: Project now includes a proper license for distribution and contribution clarity
+- 🚀 **Release Automation Added**: GitHub Release Action implemented for automatic packaging and publishing of new versions
+
+### Version 1.0 (zKinqJustinTW)
 - ✨ Initial release  
 - ⏰ Automatic item clearing  
 - ⚠️ Warning system  
 - 🔧 Admin command  
-- 🎨 Fully configurable  
+- 🎨 Fully configurable
 
 ## 👨‍💻 Author
+**dpembo** (v2+)
+**zKinqJustinTW** (v1)
 
-**zKinqJustinTW**
-**dpembo**
 
 ## 📄 License
 
@@ -143,5 +152,5 @@ This project is licensed under the MIT License.
 
 ---
 
-<p align="center">Made with ❤️ by zKinqJustinTW</p>
-<P align="center">Updated ✨ by dpembo</p>
+<p align="center">Made with ❤️ by zKinqJustinTW (v1)</p>
+<P align="center">Updated ✨ by dpembo (v2)</p>
