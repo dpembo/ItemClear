@@ -135,6 +135,7 @@ If you have questions or issues:
 ## 👨‍💻 Author
 
 **zKinqJustinTW**
+**dpembo**
 
 ## 📄 License
 
@@ -143,3 +144,4 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">Made with ❤️ by zKinqJustinTW</p>
+<P align="center">Updated ✨ by dpembo</p>

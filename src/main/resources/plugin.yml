@@ -2,12 +2,12 @@ name: ItemClear
 version: 1.0
 main: de.zkinqjustin.itemClear.ItemClear
 api-version: '1.21'
-author: zKinqJustinTW
-description: Cleart in einem Zeit Interval alle Items auf dem Boden
+author: zKinqJustinTW & dpembo
+description: Clears all items on the ground at a set time interval
 
 commands:
   ic:
-    description: Item Clear sofort ausführen (nur für Admins)
+    description: Run Item Clear immediately (admins only)
     usage: /<command>
     permission: itemclear.admin
-    permission-message: Du hast keine Berechtigung für diesen Command!
+    permission-message: You do not have permission for this command!

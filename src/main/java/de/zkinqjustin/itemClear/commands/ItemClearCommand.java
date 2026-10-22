@@ -29,11 +29,8 @@ public class ItemClearCommand implements CommandExecutor {
             return true;
         }
 
-        Bukkit.getWorlds().forEach(world -> {
-            world.getEntities().stream()
-                    .filter(entity -> entity.getType().toString().contains("ITEM"))
-                    .forEach(org.bukkit.entity.Entity::remove);
-        });
+        // Shared removal path: only dropped Item entities, never item frames or displays
+        plugin.clearItems();
 
         player.sendMessage(plugin.getCommandSuccessMessage());
         Bukkit.broadcastMessage(plugin.getCommandBroadcastMessage());

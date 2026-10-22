@@ -1,18 +1,30 @@
-# Clear interval in sekunden
-clear-interval: 600
-# Warnungs timer bevor der clear passiert
-warning-time: 60
-# Nachricht die angezeigt wird wenn die Items gecleart wurden
-clear-message: '&6[ItemClear] &cAlle Items wurden vom Boden entfernt!'
-# Warung die Angezeigt wird wenn die Items gecleart werden
-warning-message: '&6[ItemClear] &eAchtung! In einer Minute werden alle Items vom Boden entfernt!'
+# Seconds to wait after server start before the first clear cycle begins
+initial-delay: 0
 
-# Command Nachrichten
-# Nachricht die dem Spieler angezeigt wird wenn der Command erfolgreich ausgeführt wurde
-command-success-message: '&6[ItemClear] &aItem Clear wurde sofort ausgeführt!'
-# Broadcast Nachricht die allen Spielern angezeigt wird wenn ein Admin den Command ausführt
-command-broadcast-message: '&6[ItemClear] &eEin Admin hat den Item Clear manuell ausgelöst!'
-# Nachricht die angezeigt wird wenn der Spieler keine Berechtigung hat
-command-no-permission-message: '&6[ItemClear] &cDu hast keine Berechtigung für diesen Command!'
-# Nachricht die angezeigt wird wenn der Command nicht von einem Spieler ausgeführt wird
-command-player-only-message: '&6[ItemClear] &cDieser Command kann nur von Spielern ausgeführt werden!'
+# Clear interval in seconds
+clear-interval: 600
+
+# Warning time in seconds before the clear happens (capped at clear-interval)
+warning-time: 60
+
+# The warning is only sent if at least this many items are on the ground (minimum 1)
+min-items-for-warning: 1
+
+# Send the clear message even when no items were removed
+announce-clear-when-empty: false
+
+# Placeholders: {count} = number of items, {time} = warning time (e.g. "1 minute")
+# Message shown when the items have been cleared
+clear-message: '&cAll items on the ground have been removed! (&f{count}&c items)'
+# Warning shown before the items are cleared
+warning-message: '&eWarning! &f{count}&e items on the ground will be removed in &f{time}&e!'
+
+# Command messages
+# Message shown to the player when the command was executed successfully
+command-success-message: '&aItem Clear has been executed!'
+# Broadcast message shown to all players when an admin runs the command
+command-broadcast-message: '&eAn admin has manually triggered Item Clear!'
+# Message shown when the player has no permission
+command-no-permission-message: '&cYou do not have permission for this command!'
+# Message shown when the command is not run by a player
+command-player-only-message: '&cThis command can only be executed by players!'
